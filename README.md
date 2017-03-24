@@ -25,3 +25,28 @@
         return $this->salt;
     }
 ```
+
+
+## Controller
+### App\Http\Controllers\Auth\RegisterController
+```php
+
+	use Illuminate\Support\Str;
+    
+	/**
+     * Create a new user instance after a valid registration.
+     *
+     * @param  array $data
+     * @return User
+     */
+    protected function create(array $data)
+    {
+        $salt = Str::random(6);
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => bcrypt($data['password'] . $salt),
+            'salt' => $salt,
+        ]);
+    }
+```
