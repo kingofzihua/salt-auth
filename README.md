@@ -1,5 +1,5 @@
-# salt-auth
-
+# Laravel Auth extend [salt]
+@(salt)[password|auth]
 ## install
 
 ### composer.json
