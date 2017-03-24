@@ -5,7 +5,7 @@
 ### composer.json
 **composer**
 
-     $ composer require kingofzihua/salt-auth dev-master
+     $ composer require kingofzihua/salt-auth 1.0.0
 ### provider
 **修改 app/config/app.php 文件, 在 providers 数组里面添加:**
 
