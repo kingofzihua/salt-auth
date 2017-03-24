@@ -1,15 +1,19 @@
 # salt-auth
-Modify laravel user authentication mode
 
-composer.json#
-"kingofzihua/salt-auth": "dev-master"
 
-install
-composer update
+## Modify laravel user authentication mode
 
-provider#
-修改 app/config/app.php 文件, 在 providers 数组里面添加:
-Kingofzihua\SaltAuth\ServiceProvider\SaltAuthServiceProvider::class
+### composer.json
+**composer **
+
+     $ composer require kingofzihua/salt-auth dev-master
+
+### provider
+**修改 app/config/app.php 文件, 在 providers 数组里面添加:**
+
+	Kingofzihua\SaltAuth\ServiceProvider\SaltAuthServiceProvider::class
+
+
 
 ### add in your User Model
 ```php
