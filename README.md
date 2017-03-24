@@ -14,7 +14,7 @@
 
 
 ## Model
-### App\User
+### add App\User
 ```php
    /**
      * get User salt
@@ -28,7 +28,7 @@
 
 
 ## Controller
-### App\Http\Controllers\Auth\RegisterController
+### edit App\Http\Controllers\Auth\RegisterController
 ```php
 
     use Illuminate\Support\Str;
@@ -48,5 +48,27 @@
             'password' => bcrypt($data['password'] . $salt),
             'salt' => $salt,
         ]);
+    }
+```
+
+##Database  Migrations
+### edit Users_table
+```php
+   /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->string('salt'); //Random string
+            $table->rememberToken();
+            $table->timestamps();
+        });
     }
 ```
