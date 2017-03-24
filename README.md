@@ -31,9 +31,9 @@
 ### App\Http\Controllers\Auth\RegisterController
 ```php
 
-	use Illuminate\Support\Str;
+    use Illuminate\Support\Str;
     
-	/**
+    /**
      * Create a new user instance after a valid registration.
      *
      * @param  array $data
