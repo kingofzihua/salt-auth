@@ -4,7 +4,7 @@
 ## Modify laravel user authentication mode
 
 ### composer.json
-**composer **
+**composer**
 
      $ composer require kingofzihua/salt-auth dev-master
 
