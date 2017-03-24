@@ -1,6 +1,6 @@
 {
     "name": "kingofzihua/salt-auth",
-    "homepage": "https://github.com/kingofhua/saltAuth",
+    "homepage": "https://github.com/kingofhua/salt-auth",
     "description": "a Laravel salt auth.",
     "keywords": ["salt", "auth"],
     "license": "MIT",
