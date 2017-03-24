@@ -51,7 +51,7 @@
     }
 ```
 
-##Database  Migrations
+## Database  Migrations
 ### edit Users_table
 ```php
    /**
