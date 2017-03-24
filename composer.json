@@ -1,5 +1,5 @@
 {
-    "name": "kingofzihua/saltAuth",
+    "name": "kingofzihua/salt-auth",
     "homepage": "https://github.com/kingofhua/saltAuth",
     "description": "a Laravel salt auth.",
     "keywords": ["salt", "auth"],
