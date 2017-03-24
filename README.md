@@ -1,7 +1,6 @@
 # salt-auth
 
-
-## Modify laravel user authentication mode
+## install
 
 ### composer.json
 **composer**
@@ -14,8 +13,8 @@
 	Kingofzihua\SaltAuth\ServiceProvider\SaltAuthServiceProvider::class
 
 
-
-### add in your User Model
+## Model
+### App\User
 ```php
    /**
      * get User salt
